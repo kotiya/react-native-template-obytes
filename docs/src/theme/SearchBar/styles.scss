@@ -1,0 +1,37 @@
+$search-icon-size: 24px;
+$search-icon-padding: 8px;
+$search-icon-line-height: 32px;
+
+.search-icon {
+  background-image: var(--ifm-navbar-search-input-icon);
+  height: auto;
+  width: $search-icon-size;
+  cursor: pointer;
+  padding: $search-icon-padding;
+  line-height: $search-icon-line-height;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.search-icon-hidden {
+  visibility: hidden;
+}
+
+@media (max-width: 360px) {
+  .search-bar {
+    width: 0 !important;
+    background: none !important;
+    padding: 0 !important;
+    transition: none !important;
+  }
+
+  .search-bar-expanded {
+    width: 9rem !important;
+  }
+
+  .search-icon {
+    display: inline;
+    vertical-align: sub;
+  }
+}

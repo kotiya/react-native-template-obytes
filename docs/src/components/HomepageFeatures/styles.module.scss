@@ -1,0 +1,13 @@
+$feature-padding: 2rem;
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: $feature-padding 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
